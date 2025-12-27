@@ -1,0 +1,5 @@
+description = 'infrastructure-riftbound'
+
+dependencies {
+    implementation project(':domain-riftbound')
+}

@@ -1,4 +1,4 @@
-package com.riftsmith.riftbound_data_syncer;
+package com.riftsmith.datasyncer;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

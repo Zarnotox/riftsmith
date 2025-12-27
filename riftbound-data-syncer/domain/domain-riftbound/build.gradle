@@ -1,0 +1,5 @@
+description = 'domain-riftbound'
+
+dependencies {
+    implementation libs.jacksonAnnotations
+}
