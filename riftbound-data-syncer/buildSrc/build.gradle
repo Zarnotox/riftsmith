@@ -1,0 +1,12 @@
+plugins {
+    id 'groovy-gradle-plugin'
+    id 'java'
+}
+
+repositories {
+    gradlePluginPortal()
+}
+
+tasks.withType(Jar).configureEach {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}

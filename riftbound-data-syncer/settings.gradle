@@ -1,1 +1,11 @@
 rootProject.name = 'riftbound-data-syncer'
+
+include('application')
+
+include(':domain-riftbound')
+include(':infrastructure-riftbound')
+
+// ---------------------- //
+
+project(':domain-riftbound').projectDir = file('domain/domain-riftbound')
+project(':infrastructure-riftbound').projectDir = file('infrastructure/infrastructure-riftbound')

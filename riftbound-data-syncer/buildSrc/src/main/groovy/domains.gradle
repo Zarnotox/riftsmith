@@ -1,0 +1,8 @@
+plugins {
+    id 'java'
+}
+
+dependencies {
+    implementation project(':domain-riftbound')
+    runtimeOnly project(':infrastructure-riftbound')
+}

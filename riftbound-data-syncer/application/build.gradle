@@ -1,0 +1,20 @@
+plugins {
+    id 'domains'
+    alias(libs.plugins.springBoot)
+    alias(libs.plugins.springDependencyManagement)
+}
+
+description = 'application'
+
+dependencies {
+    implementation libs.springBootStarterWeb
+    implementation libs.springBootStarterActuator
+    implementation libs.springBootStarterDataJpa
+    implementation libs.postgresql
+
+    testImplementation libs.springBootStarterTest
+}
+
+bootJar {
+    archiveFileName = 'bootjar.jar'
+}

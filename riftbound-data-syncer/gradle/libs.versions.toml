@@ -1,0 +1,26 @@
+[versions]
+springBootVersion = '3.5.5'
+
+[libraries]
+commonsLang3 = { module = 'org.apache.commons:commons-lang3', version = '3.17.0' }
+commonsMath3 = { module = 'org.apache.commons:commons-math3', version = '3.6.1' }
+postgresql = { module = 'org.postgresql:postgresql', version = '42.7.7' }
+jacksonAnnotations = { module = 'com.fasterxml.jackson.core:jackson-annotations', version = '2.19.0' }
+jakartaInjectApi = { module = 'jakarta.inject:jakarta.inject-api', version = '2.0.1' }
+jakartaPersistenceApi = { module = 'jakarta.persistence:jakarta.persistence-api', version = '3.1.0' }
+junitJupiterApi = { module = 'org.junit.jupiter:junit-jupiter-api' }
+junitJupiterEngine = { module = 'org.junit.jupiter:junit-jupiter-engine' }
+junitPlatformLauncher = { module = 'org.junit.platform:junit-platform-launcher' }
+lombok = { module = 'org.projectlombok:lombok', version = '1.18.38' }
+springBoot = { module = 'org.springframework.boot:spring-boot', version.ref = 'springBootVersion' }
+springBootStarterActuator = { module = 'org.springframework.boot:spring-boot-starter-actuator', version.ref = 'springBootVersion' }
+springBootStarterJson = { module = 'org.springframework.boot:spring-boot-starter-json', version.ref = 'springBootVersion' }
+springBootStarterDataJpa = { module = 'org.springframework.boot:spring-boot-starter-data-jpa', version.ref = 'springBootVersion' }
+springBootStarterWeb = { module = 'org.springframework.boot:spring-boot-starter-web', version.ref = 'springBootVersion' }
+springBootStarterTest = { module = 'org.springframework.boot:spring-boot-starter-test', version.ref = 'springBootVersion' }
+jgraphtCore = { module = 'org.jgrapht:jgrapht-core', version = '1.5.2' }
+imageIoWebp = { module = 'com.twelvemonkeys.imageio:imageio-webp', version = '3.12.0' }
+
+[plugins]
+springBoot = { id = 'org.springframework.boot', version.ref = 'springBootVersion'}
+springDependencyManagement = { id = 'io.spring.dependency-management', version = '1.1.7' }
