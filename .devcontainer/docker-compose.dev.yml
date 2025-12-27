@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:18.1-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: riftsmith
+      POSTGRES_PASSWORD: riftsmith
+      POSTGRES_DB: riftsmith
+    ports:
+      - '5432:5432'
+    volumes:
+      - db-data:/var/lib/postgresql/data
+
+  riftbound-data-syncer:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    volumes:
+      - ../:/workspace:cached
+    command: sleep infinity
+
+volumes:
+  db-data:
