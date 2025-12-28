@@ -1,9 +1,11 @@
 description = 'infrastructure-riftbound'
 
 dependencies {
-    implementation project(':domain-riftbound') // assuming entities might live here or infra
+    implementation project(':domain-riftbound')
+    implementation project(':domain-data-fetch')
 
     implementation libs.springBootStarterDataJpa
+    implementation libs.springBootStarterWeb
 
     runtimeOnly libs.postgresql
     implementation libs.flywayCore

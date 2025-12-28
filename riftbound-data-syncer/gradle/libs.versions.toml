@@ -1,5 +1,6 @@
 [versions]
 springBootVersion = '3.5.5'
+flyway = "11.20.0"
 
 [libraries]
 commonsLang3 = { module = 'org.apache.commons:commons-lang3', version = '3.17.0' }
@@ -20,6 +21,8 @@ springBootStarterWeb = { module = 'org.springframework.boot:spring-boot-starter-
 springBootStarterTest = { module = 'org.springframework.boot:spring-boot-starter-test', version.ref = 'springBootVersion' }
 jgraphtCore = { module = 'org.jgrapht:jgrapht-core', version = '1.5.2' }
 imageIoWebp = { module = 'com.twelvemonkeys.imageio:imageio-webp', version = '3.12.0' }
+flywayCore = { module = 'org.flywaydb:flyway-core', version.ref = 'flyway' }
+flywayPostgres = { module = 'org.flywaydb:flyway-database-postgresql', version.ref = 'flyway' }
 
 [plugins]
 springBoot = { id = 'org.springframework.boot', version.ref = 'springBootVersion'}

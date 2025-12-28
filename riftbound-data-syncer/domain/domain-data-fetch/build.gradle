@@ -1,0 +1,7 @@
+description = 'domain-data-fetch'
+
+dependencies {
+    implementation libs.jacksonAnnotations
+
+    implementation project(':domain-riftbound')
+}

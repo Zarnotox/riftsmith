@@ -5,4 +5,8 @@ plugins {
 dependencies {
     implementation project(':domain-riftbound')
     runtimeOnly project(':infrastructure-riftbound')
+
+    implementation project(':domain-data-fetch')
+
+    runtimeOnly project(':infrastructure-riftcodex')
 }

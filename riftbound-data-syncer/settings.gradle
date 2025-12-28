@@ -5,7 +5,15 @@ include('application')
 include(':domain-riftbound')
 include(':infrastructure-riftbound')
 
+include(':domain-data-fetch')
+
+include(':infrastructure-riftcodex')
+
 // ---------------------- //
 
 project(':domain-riftbound').projectDir = file('domain/domain-riftbound')
 project(':infrastructure-riftbound').projectDir = file('infrastructure/infrastructure-riftbound')
+
+project(':domain-data-fetch').projectDir = file('domain/domain-data-fetch')
+
+project(':infrastructure-riftcodex').projectDir = file('infrastructure/infrastructure-riftcodex')
